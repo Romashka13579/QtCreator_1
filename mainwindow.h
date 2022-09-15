@@ -18,6 +18,16 @@ public:
 private slots:
     void on_ButtonError_clicked();
 
+    void on_ButtonAsk_clicked();
+
+    void on_ButtonInformationQt_pressed();
+
+    void on_ButtonInformation_pressed();
+
+    void on_ButtonInformationQt_clicked();
+
+    void on_ButtonInformation_clicked();
+
 private:
     Ui::MainWindow *ui;
 };

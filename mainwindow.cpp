@@ -17,9 +17,7 @@ MainWindow::~MainWindow()
 
 
 
-
-
-void MainWindow::on_ButtonError_clicked()
+void MainWindow::on_ButtonAsk_clicked()
 {
     QMessageBox::StandardButton answer = QMessageBox::question (this, "Question", "Do you have a car", QMessageBox::Yes | QMessageBox::No);
     switch(answer){
@@ -30,6 +28,13 @@ void MainWindow::on_ButtonError_clicked()
         QMessageBox::information (this, "Answer", "You haven't got a car yet(");
         break;
     }
-
+}
+void MainWindow::on_ButtonInformationQt_clicked()
+{
+    QMessageBox::aboutQt (this, "AboutQt");
+}
+void MainWindow::on_ButtonInformation_clicked()
+{
+    QMessageBox::information (this, "About", "You can write a text in textline below");
 }
 
