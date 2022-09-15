@@ -21,6 +21,15 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_ButtonError_clicked()
 {
-        QMessageBox::critical(this, "Program is still not perfect, so error", "Program is still not perfect, so error");
+    QMessageBox::StandardButton answer = QMessageBox::question (this, "Question", "Do you have a car", QMessageBox::Yes | QMessageBox::No);
+    switch(answer){
+    case QMessageBox::Yes:
+        QMessageBox::information (this, "Answer", "Congratulations!");
+        break;
+    case QMessageBox::No:
+        QMessageBox::information (this, "Answer", "You haven't got a car yet(");
+        break;
+    }
+
 }
 
