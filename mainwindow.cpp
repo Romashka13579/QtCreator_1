@@ -38,3 +38,9 @@ void MainWindow::on_ButtonInformation_clicked()
     QMessageBox::information (this, "About", "You can write a text in textline below");
 }
 
+
+void MainWindow::on_ButtonNone_clicked()
+{
+    QMessageBox::about (this, "About", "Information" );
+}
+

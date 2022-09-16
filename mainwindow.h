@@ -28,6 +28,8 @@ private slots:
 
     void on_ButtonInformation_clicked();
 
+    void on_ButtonNone_clicked();
+
 private:
     Ui::MainWindow *ui;
 };
