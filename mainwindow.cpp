@@ -20,13 +20,13 @@ MainWindow::~MainWindow()
 void MainWindow::on_ButtonAsk_clicked()
 {
     QMessageBox::StandardButton answer = QMessageBox::question (this, "Question", "Do you have a car", QMessageBox::Yes | QMessageBox::No);
-    switch(answer){
-    case QMessageBox::Yes:
+    if(answer == QMessageBox::Yes)
+    {
         QMessageBox::information (this, "Answer", "Congratulations!");
-        break;
-    case QMessageBox::No:
+    }
+    else if(answer == QMessageBox::No)
+    {
         QMessageBox::information (this, "Answer", "You haven't got a car yet(");
-        break;
     }
 }
 void MainWindow::on_ButtonInformationQt_clicked()
