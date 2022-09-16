@@ -6,51 +6,43 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>459</width>
+    <height>329</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QWidget" name="horizontalLayoutWidget">
+   <widget class="QWidget" name="gridLayoutWidget_2">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>30</y>
-      <width>701</width>
+      <x>10</x>
+      <y>10</y>
+      <width>441</width>
       <height>141</height>
      </rect>
     </property>
-    <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,0,0">
-     <property name="spacing">
-      <number>55</number>
+    <layout class="QGridLayout" name="gridLayout_2" rowstretch="0,0,0" columnstretch="10,0" columnminimumwidth="10,100">
+     <property name="leftMargin">
+      <number>10</number>
      </property>
-     <item>
-      <widget class="QPushButton" name="ButtonNone">
-       <property name="enabled">
-        <bool>true</bool>
-       </property>
-       <property name="font">
-        <font>
-         <family>Arial</family>
-         <pointsize>20</pointsize>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
-       </property>
-       <property name="focusPolicy">
-        <enum>Qt::StrongFocus</enum>
-       </property>
-       <property name="text">
-        <string>Default Button</string>
-       </property>
-      </widget>
-     </item>
-     <item>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <property name="horizontalSpacing">
+      <number>20</number>
+     </property>
+     <property name="verticalSpacing">
+      <number>0</number>
+     </property>
+     <item row="1" column="0">
       <widget class="QPushButton" name="ButtonAsk">
        <property name="enabled">
         <bool>true</bool>
@@ -58,8 +50,8 @@
        <property name="font">
         <font>
          <family>Arial</family>
-         <pointsize>20</pointsize>
-         <bold>true</bold>
+         <pointsize>12</pointsize>
+         <bold>false</bold>
         </font>
        </property>
        <property name="cursor">
@@ -69,11 +61,11 @@
         <enum>Qt::StrongFocus</enum>
        </property>
        <property name="text">
-        <string>Question</string>
+        <string>Button</string>
        </property>
       </widget>
      </item>
-     <item>
+     <item row="0" column="1">
       <widget class="QPushButton" name="ButtonInformationQt">
        <property name="enabled">
         <bool>true</bool>
@@ -81,8 +73,8 @@
        <property name="font">
         <font>
          <family>Arial</family>
-         <pointsize>20</pointsize>
-         <bold>true</bold>
+         <pointsize>12</pointsize>
+         <bold>false</bold>
         </font>
        </property>
        <property name="cursor">
@@ -92,54 +84,47 @@
         <enum>Qt::StrongFocus</enum>
        </property>
        <property name="text">
-        <string>Qt info</string>
+        <string>One more button</string>
        </property>
       </widget>
      </item>
-    </layout>
-   </widget>
-   <widget class="QWidget" name="gridLayoutWidget">
-    <property name="geometry">
-     <rect>
-      <x>150</x>
-      <y>230</y>
-      <width>547</width>
-      <height>301</height>
-     </rect>
-    </property>
-    <layout class="QGridLayout" name="gridLayout" rowstretch="0,0" columnstretch="3,0">
-     <property name="leftMargin">
-      <number>10</number>
-     </property>
-     <property name="topMargin">
-      <number>10</number>
-     </property>
-     <property name="rightMargin">
-      <number>10</number>
-     </property>
-     <property name="bottomMargin">
-      <number>10</number>
-     </property>
-     <item row="1" column="0">
-      <widget class="QLineEdit" name="lineEdit">
+     <item row="1" column="1">
+      <widget class="QLabel" name="label">
        <property name="font">
         <font>
-         <family>Algerian</family>
-         <pointsize>18</pointsize>
+         <pointsize>12</pointsize>
+         <bold>false</bold>
         </font>
        </property>
        <property name="text">
-        <string>Write Text</string>
-       </property>
-       <property name="maxLength">
-        <number>7373737</number>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
+        <string>Simple Text</string>
        </property>
       </widget>
      </item>
      <item row="0" column="0">
+      <widget class="QPushButton" name="ButtonNone">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>12</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::StrongFocus</enum>
+       </property>
+       <property name="text">
+        <string>Here is button</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
       <widget class="QPushButton" name="ButtonInformation">
        <property name="enabled">
         <bool>true</bool>
@@ -147,8 +132,7 @@
        <property name="font">
         <font>
          <family>Arial</family>
-         <pointsize>20</pointsize>
-         <bold>true</bold>
+         <pointsize>12</pointsize>
         </font>
        </property>
        <property name="cursor">
@@ -158,20 +142,51 @@
         <enum>Qt::StrongFocus</enum>
        </property>
        <property name="text">
-        <string>How to use textline</string>
+        <string>Just Button</string>
        </property>
       </widget>
      </item>
-     <item row="0" column="1">
-      <widget class="QLabel" name="label">
+    </layout>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>160</y>
+      <width>441</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="leftMargin">
+      <number>40</number>
+     </property>
+     <property name="rightMargin">
+      <number>200</number>
+     </property>
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Name</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit">
        <property name="font">
         <font>
-         <pointsize>14</pointsize>
-         <bold>true</bold>
+         <family>Algerian</family>
+         <pointsize>12</pointsize>
         </font>
        </property>
        <property name="text">
-        <string>Simple Text</string>
+        <string/>
+       </property>
+       <property name="maxLength">
+        <number>7373737</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
        </property>
       </widget>
      </item>
@@ -183,7 +198,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>459</width>
      <height>26</height>
     </rect>
    </property>
